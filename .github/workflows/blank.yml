@@ -32,7 +32,7 @@ jobs:
     # 4. Tests ausführen
     - name: Run YOLO detection script
       run: |
-        python your_yolo_script.py  # Ersetze 'your_yolo_script.py' durch den Namen deiner YOLO-Datei
+        beispiel.py  # Ersetze 'your_yolo_script.py' durch den Namen deiner YOLO-Datei
             # 4. Tests ausführen
     - name: Run tests
       run: |
