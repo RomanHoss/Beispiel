@@ -25,3 +25,20 @@ plt.show()
 # 5. Zusätzliche Informationen ausgeben
 for result in results[0].boxes:
     print(f"Objekt: {result.cls}, Wahrscheinlichkeit: {result.conf:.2f}, Box: {result.xyxy}")
+# test_yolo.py
+from ultralytics import YOLO
+
+def test_yolo_model():
+    model = YOLO('yolov8n.pt')  # Lade das Modell
+    assert model is not None, "Das Modell konnte nicht geladen werden."
+
+def test_image_processing():
+    image_path = 'example.jpg'  # Beispielbild
+    image = cv2.imread(image_path)
+    assert image is not None, "Das Bild konnte nicht geladen werden."
+
+if __name__ == "__main__":
+    test_yolo_model()
+    test_image_processing()
+    print("Alle Tests erfolgreich!")
+
