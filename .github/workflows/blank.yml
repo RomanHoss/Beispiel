@@ -33,3 +33,4 @@ jobs:
     - name: Run YOLO detection script
       run: |
         python your_yolo_script.py  # Ersetze 'your_yolo_script.py' durch den Namen deiner YOLO-Datei
+##hallo
